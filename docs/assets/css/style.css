@@ -1,0 +1,42 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* para crear el menu "incrustado" en el carrusel se cambio su propiedad a absoluta y se le
+puso un z-index alto para que sobresaliera por sobre las imagenes, ademas de quitar su propio borde */
+.nav-menu-principal{
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    background: none !important;
+    border: 0;
+    border-radius: 0;
+}
+
+hr {
+    border: 1px solid;
+}
+
+h4 {
+    font-weight: 500;
+}
+
+/* ya que una de las imagenes de las card era mas grande tuve que hacer un pequeño ajuste */
+#destacados img {
+    height: 150px;
+}
+
+/* un pequeño fix para las resolucion grande del carrusel */
+@media only screen and (min-width: 400px) {
+    #carouselHeader img {
+        height: 520px;
+    }
+}
+
+#footer-icons {
+    font-size: 30px;
+}
+
+footer a {
+    padding: 0 3px;
+}
